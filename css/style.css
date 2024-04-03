@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body:before {
+    content: "";
+    background: url("../images/city.webp") no-repeat center center fixed;
+    background-size: cover;
+    filter: opacity(0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height:100vh;
+}
+body {
+    font-family: "system-ui";
+}
+.flex-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-page {
+    width: 350px;
+}
+.form {
+    position: relative;
+    background: #FFFFFF;
+    max-width: 350px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 8px 8px 22px 9px rgba(0,0,0,0.84);
+    -webkit-box-shadow: 8px 8px 22px 9px rgba(0,0,0,0.84);
+}
+.form input {
+    outline: 0;
+    background: #dedcdc;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #6293d3;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease;
+    cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+    background: #203cd0;
+}
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+.form .message a {
+    color: #6293d3;
+    text-decoration: none;
+}
+.form .register-form {
+    display: none;
+}
